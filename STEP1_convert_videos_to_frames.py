@@ -5,7 +5,7 @@ import glob
 fps = 8
 
 #tổng video có trong folder dataset
-folders = glob.glob('dataset_videos/celeb-v2/test/fake')
+folders = glob.glob('path/to/videos/dataset')
 videonames_list = []
 for folder in folders:
     for f in glob.glob(folder+'/*.mp4'):
@@ -21,7 +21,7 @@ for i in range(0,len(videonames_list)):
   success = True
   while success:
     success,image = video.read()
-    name = 'dataset_frames/CelebV2_Frames/test/fake/'+'v2_'+str(count)+'.jpg'
+    name = 'path/to/frames/dataset'+str(count)+'.jpg'
     if success == True:
       if count % fps == 0:
         cv2.imwrite(name,image)
