@@ -21,7 +21,7 @@ for i in range(0,len(videonames_list)):
   success = True
   while success:
     success,image = video.read()
-    name = 'path/to/frames/dataset'+str(count)+'.jpg'
+    name = 'path/to/frames/dataset/'+str(count)+'.jpg'
     if success == True:
       if count % fps == 0:
         cv2.imwrite(name,image)
