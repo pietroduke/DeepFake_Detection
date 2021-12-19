@@ -8,7 +8,7 @@ print("Chạy crop faces...")
 net = cv2.dnn.readNetFromCaffe('face_detector_dnn/deploy.prototxt',
                                'face_detector_dnn/res10_300x300_ssd_iter_140000.caffemodel')
 # Khởi tạo đường dẫn folder dataset_frames
-path = glob.glob("dataset_frames/CelebV2_Frames/test/real/*.jpg")
+path = glob.glob("path/to/frames/dataset/folder/*.jpg")
 saved = 0
 for file in path:
     saved +=1
@@ -32,7 +32,7 @@ for file in path:
                 face = img[startY:endY, startX:endX]
 
                 # Lưu ảnh khuôn mặt vào folder dataset
-                p = os.path.sep.join(['dataset_faces/DatasetCELEB_test/real', "{}.jpg".format(saved)])
+                p = os.path.sep.join(['path/to/faces/dataset/folder', "{}.jpg".format(saved)])
                 cv2.imwrite(p, face)
                 print("Đã lưu vào {}".format(p))
             except Exception as e:
