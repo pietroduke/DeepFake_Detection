@@ -4,7 +4,7 @@ import glob
 import time
 start_time = time.time()
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
-path = glob.glob("Wider_samples/*.jpg")
+path = glob.glob("path/to/origin/folder/*.jpg")
 saved = 0
 for file in path:
     saved +=1
@@ -14,7 +14,7 @@ for file in path:
     for (x, y, w, h) in faces:
         try:
             face = img[y:y+h, x:x+h]
-            p = os.path.sep.join(['Wider_faces/haar', "{}.jpg".format(saved)])
+            p = os.path.sep.join(['path/to/haar_face/folder', "{}.jpg".format(saved)])
             cv2.imwrite(p, face)
             print("Đã lưu vào {}".format(p))
         except Exception as e:
