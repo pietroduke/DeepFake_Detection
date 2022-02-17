@@ -28,7 +28,7 @@ for file in path:
             (startX, startY, endX, endY) = box.astype("int")
             try:
                 face = img[startY:endY, startX:endX]
-                p = os.path.sep.join(['path/to/face/folder', "{}.jpg".format(saved)])
+                p = os.path.sep.join(['path/to/dnn_face/folder', "{}.jpg".format(saved)])
                 cv2.imwrite(p, face)
                 print("Đã lưu vào {}".format(p))
             except Exception as e:
