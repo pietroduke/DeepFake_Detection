@@ -4,7 +4,7 @@ import mtcnn
 import os
 import time
 start_time = time.time()
-path = glob.glob("Wider_samples/*.jpg")
+path = glob.glob("path/to/origin/folder/*.jpg")
 saved = 0
 for file in path:
     saved += 1
@@ -20,7 +20,7 @@ for file in path:
         x, y, w, h = face['box']
         try:
             f = img[y:y+h, x:x+h]
-            p = os.path.sep.join(['Wider_faces/mtcnn', "{}.jpg".format(saved)])
+            p = os.path.sep.join(['path/to/mtcnn_face/folder', "{}.jpg".format(saved)])
             cv2.imwrite(p, f)
             print("Đã lưu vào {}".format(p))
         except Exception as e:
