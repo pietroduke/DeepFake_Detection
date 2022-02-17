@@ -8,7 +8,7 @@ start_time = time.time()
 
 net = cv2.dnn.readNetFromCaffe('face_detector_dnn/deploy.prototxt',
                                'face_detector_dnn/res10_300x300_ssd_iter_140000.caffemodel')
-path = glob.glob("Wider_samples/*.jpg")
+path = glob.glob("path/to/origin/folder/*.jpg")
 saved = 0
 for file in path:
     saved +=1
@@ -28,7 +28,7 @@ for file in path:
             (startX, startY, endX, endY) = box.astype("int")
             try:
                 face = img[startY:endY, startX:endX]
-                p = os.path.sep.join(['Wider_faces/dnn', "{}.jpg".format(saved)])
+                p = os.path.sep.join(['path/to/face/folder', "{}.jpg".format(saved)])
                 cv2.imwrite(p, face)
                 print("Đã lưu vào {}".format(p))
             except Exception as e:
