@@ -10,7 +10,7 @@
 
 ### STEP 0: Phân chia video cho huấn luyện và kiểm thử của tệp FaceForensics++
 
-*[Lưu ý]* Do tệp **FaceForensics++** mặc định không phân chia tệp test sẵn như **CELEB-DF-V2**, do đó cần phân chia video cho tệp Train : Test trước theo tỉ lệ: Train : Val : Test = 0.9 : 0.0 : 0.1 theo file `STEP2_split_dataset.py`, sau đó mới thực hiện các bước tiếp theo
+*[Lưu ý]* Do tệp **FaceForensics++** mặc định không phân chia tệp test sẵn như **CELEB-DF-V2**, do đó cần phân chia video cho tệp Train : Test trước theo tỉ lệ: Train : Val : Test = 0.9 : 0.0 : 0.1 theo script `STEP2_split_dataset.py`, sau đó mới thực hiện các bước tiếp theo
 
 ### STEP 1: Chuyển đổi Video thành các Khung hình
 Ở bước này, chỉ trích xuất số lượng khung hình nhất định. Cụ thể:
