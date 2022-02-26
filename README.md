@@ -5,8 +5,8 @@
 2) FaceForensics++: Learning to Detect Manipulated Facial Images. Source: https://github.com/ondyari/FaceForensics
 
 ### Thư viện
-Các thư viện cần cài đặt có thể tìm thấy trong `requirements.txt`
-  chạy `pip install -r requirements.txt` để cài đặt thư viện
+- Các thư viện cần cài đặt có thể tìm thấy trong `requirements.txt`
+- Chạy `pip install -r requirements.txt` để cài đặt thư viện
 
 ### STEP 0: Phân chia video cho huấn luyện và kiểm thử của tệp FaceForensics++
 
