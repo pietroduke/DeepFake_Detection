@@ -6,7 +6,7 @@
 
 ### Thư viện
 Các thư viện cần cài đặt có thể tìm thấy trong `requirements.txt`
-chạy `pip install -r requirements.txt` để cài đặt thư viện
+  chạy `pip install -r requirements.txt` để cài đặt thư viện
 
 ### STEP 0: Phân chia video cho huấn luyện và kiểm thử của tệp FaceForensics++
 
