@@ -6,8 +6,8 @@ import os
 
 start_time = time.time()
 
-net = cv2.dnn.readNetFromCaffe('face_detector_dnn/deploy.prototxt',
-                               'face_detector_dnn/res10_300x300_ssd_iter_140000.caffemodel')
+net = cv2.dnn.readNetFromCaffe('DNN_face_detector/deploy.prototxt',
+                               'DNN_face_detector/res10_300x300_ssd_iter_140000.caffemodel')
 path = glob.glob("path/to/origin/folder/*.jpg")
 saved = 0
 for file in path:
