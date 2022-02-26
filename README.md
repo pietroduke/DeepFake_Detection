@@ -46,12 +46,13 @@ Phân chia theo tỉ lệ Train : Val = 0.8 : 0.2, có xáo trộn
 4) Lựa chọn phương pháp tối ưu nhất (máy dò mặt của DNN trong OpenCV), sau đó chạy mã `STEP3_01_DNN_face_extraction_from_frames.py` một lần nữa với đường dẫn thư mục gốc là đường dẫn tới tập dữ liệu **FaceForensics++** và **CELEB-DF-V2**
 
 ### STEP 4: Huấn luyện mô hình và kiểm thử đối với tệp kiểm thử (Test)
-Chạy mã `STEP4_train_test_CNN.ipynb` trên Google Colab để thực hiện quá trình huấn luyện mô hình.
+Chạy mã `STEP4_01_FFpp_train_test_CNN.ipynb` và `STEP4_02_CELEB_train_test_CNN.ipynb` trên Google Colab để thực hiện quá trình huấn luyện mô hình trên tập FaceForensics++ và CELEB-DF-V2.
 - Trong quá trình huấn luyện có sử dụng:
   - Các mô hình pre-trained (DenseNet121, Xception, EfficientNetB0, EfficientNetB1, EfficientNetB2)
   - Data Generator (làm phong phú ảnh băng Data Augmentation)
   - Hàm loss: Categorical Classification
   - Số vòng huấn luyện: 20, Learning_rate = 0.0001, Batch_size = 32
+  - Layer SPP: SpatialPyramidPooling2D
 - Trong quá trình kiểm thử có sử dụng:
   - Confusion matrix
   - Đồ thị ROC_curve
