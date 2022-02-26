@@ -68,7 +68,7 @@ Kết quả đánh giá được thể hiện như hình dưới đây:
 3) Trên WEBCAM
 
   - ![image](https://user-images.githubusercontent.com/75497356/154406173-c4811bf8-b1fc-47fd-b024-f70d27d145e5.png)
-4) Video deepfake tự tạo bằng DeepFakeLab
+4) Video deepfake tự tạo bằng DeepFaceLab
 
   - ![image](https://user-images.githubusercontent.com/75497356/154406593-afe02e27-4c3d-46ca-b247-687bdf7c472a.png)
  
